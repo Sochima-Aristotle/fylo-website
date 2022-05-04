@@ -1,0 +1,103 @@
+$W-Blue: hsl(240, 75%, 98%);
+$Light-Gray: hsl(0, 0%, 75%);
+$Bright-Blue: hsl(224, 93%, 58%);
+$Moderate-Cyan: hsl(170, 45%, 43%);
+$Dark-Blue: hsl(243, 87%, 12%);
+$De-Blue: hsl(238, 22%, 44%);
+
+p {
+    color: $Dark-Blue;
+}
+
+.text-blue {
+    color: $Dark-Blue;
+}
+
+.text-white {
+    color: $W-Blue;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.5rem 1.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.7s;
+    border: none;
+    // border-radius: 40px;
+    margin-right: 20px;
+
+
+}
+
+.btn {
+    @extend %btn-shared;
+
+    &:hover {
+        // opacity: 0.9;
+        background-color: rebeccapurple;
+    }
+
+}
+
+.bg-blue {
+
+    background: $Bright-Blue;
+    color: #fff;
+}
+
+.bg-bright-blue {
+    background: $Bright-Blue;
+    color: #fff;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.bottom-line {
+    height: 1px;
+    width: 10rem;
+    margin: 8px;
+    background: $Moderate-Cyan;
+    display: block;
+}
+.py{
+    &-1{padding: 1rem 0;}
+    &-2{padding: 2rem 0;}
+    &-3{padding: 3rem 0;}
+    &-4{padding: 4rem 0;}
+}
+.My{
+    &-1{margin: 1rem 0;}
+    &-2{margin: 2rem 0;}
+    &-3{margin: 3rem 0;}
+    &-4{margin: 4rem 0;}
+}

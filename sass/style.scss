@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import 'varibles';
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3rem;
+}
+// h1, h2, h3, h4, h5{
+
+// }
+#head{
+    #navbar{
+        margin-top: 3rem;
+        .container{
+            .nav-content{
+                display: flex;
+                justify-content: space-between;
+    
+                ul{
+                    display: flex;
+                    
+                    li{
+                        a{
+    
+                            color: $Light-Gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-showcase{
+        margin-top: 10rem;
+        .container{
+            .show-content{
+                display: flex;
+                line-height: 2rem;
+
+                .show-text{
+                    .head-form{
+                        input[type='text']{
+                            width: 50%;
+                            height: 1.7rem;
+                        } 
+                    }
+                }
+            }
+
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+#case-section{
+    margin-top: 15rem;
+    background: #f4f4ff;
+    padding: 6rem;
+
+    .container{
+        .case-sub{
+           
+            display: flex;
+
+            .pix-section img{
+               
+                width: 350px;
+                height: 350px;
+            }
+
+            .word-section{
+                margin-top: 4rem;
+                
+                  .see{margin: 3rem 0;}
+
+                a{
+                   margin-top: 2rem;
+                    padding-bottom: 2px;
+                    color: $Moderate-Cyan;
+
+                }
+
+                .testimonia{
+                        box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, 0.2);
+                        background-color: #fff;
+                        height: 15rem;
+                        margin-top: 4rem;
+                        width: 20rem;
+                        padding: 2rem;
+                        
+                          
+                        ul{
+                            // padding: 0;
+                            margin-top: 1rem;
+                            display: flex;
+                            
+                           
+
+                            li{
+
+                                line-height: 1;
+                                font-weight: bolder;
+                                margin-left: 10px;
+
+                                p{
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+
+                        img.quote{
+                            width: 30px;
+                        }
+
+                        img{
+                            width: 3rem;
+                            border-radius: 50%;
+                        }
+                }
+            }
+        }
+    }
+}
+
+#next {
+    background-color: red;
+}
+#next{
+    height: 20rem;
+    background: $De-Blue;
+
+    .container{
+        .next-page{
+
+           
+            display: flex;
+
+            .next-content{
+                margin-top: 5rem;
+                padding-right: 20%;
+            }
+            .next-forms{
+                margin-top: 5rem;
+               
+                
+                input[type= 'text']{
+                    width: 20rem;
+                    height: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+#main-footer{
+    background: $Dark-Blue;
+    color: #fff;
+    height: 30rem;
+    .container{
+        .footers{
+
+            
+            .white{
+                margin-top: 5rem;
+                color: #fff;
+              
+        }
+        .footer-list{
+            display: flex;
+            justify-content: space-between;
+            line-height: 2.5rem;
+
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            // gap: 20px;
+            // line-height: 2.5rem;
+
+            ul{
+                li{
+                    a{
+
+                        color: #fff;
+                    }
+                }
+            }
+            .social{
+                // display: flex
+                // visibility: visible;
+              .box-socials{
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        padding: 10px;
+                        margin-right: 1rem; 
+                    }
+                
+            }
+        }
+        }
+    }
+}
+@import 'media';
